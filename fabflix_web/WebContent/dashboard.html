@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Employee Dashboard</title>
+</head>
+<body>
+
+<main>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="fab-title">Employee Dashboard</h2>
+            </div>
+            <div class="col-6 text-center">
+
+                <h3 class="text-white">Add a Star</h3>
+
+                <div class="white-card card-body">
+                    <form id="add_star_form" action="#" method="post">
+                        <input type="hidden" name="op" value="addStar">
+                        <div class="form-outline">
+                            <label for="input-star-name">Star name (required): </label>
+                            <input class="form-control" id="input-star-name" type="text" name="starName" placeholder="Enter star name">
+                        </div>
+                        <div class="form-outline">
+                            <label for="input-birth-year">Birth Year (optional): </label>
+                            <input class="form-control" id="input-birth-year" type="text" name="birthYear" placeholder="Enter birth year">
+                        </div>
+                        <br>
+                        <button class="btn btn-primary" type="submit"> Add Star </button>
+                        <br>
+                        <div class="alert alert-primary mt-2" role="alert" id="add_star_message" hidden></div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-12">
+
+                <h3 class="text-white">Get Metadata</h3>
+
+                <button id="metadata_button" class="btn btn-primary">Show Metadata</button>
+                <div class="white-card card-body">
+                    <div id="metadata_info">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+
+                <h3 class="text-white">Add a Movie</h3>
+
+                <div class="white-card card-body">
+                    <form id="add_movie_form" action="#" method="post">
+                        <input type="hidden" name="op" value="addMovie">
+                        <div class="form-outline">
+                            <label for="input-movie-title">Movie title: </label>
+                            <input class="form-control" id="input-movie-title" type="text" name="movieTitle" placeholder="Enter movie title">
+                        </div>
+                        <div class="form-outline">
+                            <label for="input-movie-director">Movie Director: </label>
+                            <input class="form-control" id="input-movie-director" type="text" name="movieDirector" placeholder="Enter movie director">
+                        </div>
+                        <div class="form-outline">
+                            <label for="input-movie-year">Movie Year: </label>
+                            <input class="form-control" id="input-movie-year" type="text" name="movieYear" placeholder="Enter movie year">
+                        </div>
+                        <div class="form-outline">
+                            <label for="input-movie-genre">Genre: </label>
+                            <input class="form-control" id="input-movie-genre" type="text" name="movieGenre" placeholder="Enter genre">
+                        </div>
+                        <div class="form-outline">
+                            <label for="input-movie-star">Star: </label>
+                            <input class="form-control" id="input-movie-star" type="text" name="movieStar" placeholder="Enter star">
+                        </div>
+                        <br>
+                        <button class="btn btn-primary" type="submit"> Add Movie </button>
+                        <br>
+                        <div class="alert alert-primary mt-2" role="alert" id="add_movie_message" hidden></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to movie-list.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="dashboard.js"></script>
+</body>
+</html>

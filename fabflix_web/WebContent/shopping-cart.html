@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Shopping Cart</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FDFDFD;">
+    <a class="navbar-brand" href="movie-list.html"><h5>Fabflix</h5></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home - Main Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="movie-list.html">Movie List</a>
+            </li>
+        </ul>
+        <a href="shopping-cart.html"><button class="btn btn-outline-success my-2 my-sm-0">Checkout</button></a>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-9 text-center">
+                <h2 class="fab-title">Shopping Cart</h2>
+                <br>
+                <div class="card-body white-card">
+                    <table id="shopping_car_table" class="table table-borderless table-dark">
+                        <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </thead>
+
+                        <!-- Table body is left empty here, will be populated with the data retrieved with single-movie.js -->
+                        <!-- single-movie.js will find this html element by its id "star_table_body" -->
+                        <tbody id="shopping_table_body"></tbody>
+                    </table>
+                    <br>
+                    <div id="total_price">
+
+                    </div>
+                </div>
+                <a href="payment.html"><button type="button" class="btn btn-primary" id="proceed-button">Proceed To Payment</button></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to movie-list.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="shopping-cart.js"></script>
+
+</body>
+</html>

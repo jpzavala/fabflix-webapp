@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Main Page</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FDFDFD;">
+    <a class="navbar-brand" href="#"><h5>Fabflix</h5></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a href="shopping-cart.html"><button class="btn btn-outline-success my-2 my-sm-0">Checkout</button></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+        <div class="row justify-content-center mb-3">
+            <div class="col-12 text-center">
+                <h2 class="fab-title">Main Page</h2>
+            </div>
+
+            <div class="col-5 text-center">
+
+                <h3 class="text-white">Search</h3>
+
+                <div class="white-card card-body">
+                    <form action="movie-list.html" method="get">
+                        <input type="hidden" name="op" value="search">
+                        <div class="form-outline">
+                            <label for="input-title">Movie Title: </label>
+                            <input class="form-control" id="input-title" type="text" name="title">
+                        </div>
+                        <div class="form-outline">
+                            <label for="input-year">Movie Year: </label>
+                            <input class="form-control" id="input-year" type="text" name="year">
+                        </div>
+                        <div class="form-outline">
+                            <label for="input-director">Movie Director: </label>
+                            <input class="form-control" id="input-director" type="text" name="director">
+                        </div>
+                        <div class="form-outline">
+                            <label for="input-star">Movie Star: </label>
+                            <input class="form-control" id="input-star" type="text" name="star">
+                        </div>
+                        <br>
+                        <button class="btn btn-primary" type="submit"> Submit </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-5 text-center">
+                <h3 class="text-white">Browse</h3>
+                <div class="white-card card-body">
+                    <div id="genre-list"></div>
+                    <br>
+                    <div id="first-character-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h3 class="text-white">Full-text Search</h3>
+            </div>
+
+            <div class="col-10">
+                <form action="movie-list.html" method="get">
+                    <div class="input-group">
+                        <input type="hidden" name="op" value="fulltext">
+                        <label for="autocomplete"></label>
+                        <input type="text" name="clues" id="autocomplete" class="autocomplete-searchbox form-control" placeholder="Search a movie">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit" id="fulltext_button">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+</main>
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to movie-list.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="index.js"></script>
+
+</body>
+</html>
