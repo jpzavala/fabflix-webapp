@@ -1,14 +1,4 @@
-# cs122b-fall21-team-7
-
-Welcome to the team-7 cs122b project repository
-
-## Demo Video URL
-
-- Project 1: https://youtu.be/ggL__oGgUhU
-- Project 2: https://youtu.be/9hr9WI5jesY
-- Project 3: https://youtu.be/SFATrQ9NSlM
-- Project 4: https://youtu.be/kGe0ZvIMgQ4
-- Project 5: https://youtu.be/LNGsHilE0GA
+# Fabflix
 
 ## Application Deployment on Tomcat
 
