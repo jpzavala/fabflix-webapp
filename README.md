@@ -1,6 +1,17 @@
 # Fabflix
 
-Fabflix is an e-commerce web application dedicated to movie browsing and rentals. Users can login to the website, search for movies based on multiple parameters, add movies to a shopping cart, and proceed to checkout. The motivation for this full-stack project was to explore the architecture of modern web application and the use of databases. 
+Fabflix is an e-commerce web application dedicated to movie browsing and rentals. Users can login to the website, search for movies based on multiple parameters, add movies to a shopping cart, and proceed to checkout. The motivation for this full-stack project was to explore the architecture of modern web applications and the use of DBMS techniques by fully implementing a shopping website. The technologies used include HTML/CSS/JavaScript, Tomcat, MySQL, Java JDBC, and AWS/GCP.
+
+The following features have been implemented:
+- User login and employee login
+- Employee dashboard to add movies
+- Full-text search, autocomplete, and fuzzy search
+- Browsing by movie genre, movie title
+- Shopping cart
+- Recording of sales
+- Security: reCAPTCHA, HTTPS, password encryption
+- Fabflix Android Application
+- XML Parsing to add external data about movies to the database
 
 ## Application Deployment on Tomcat
 
