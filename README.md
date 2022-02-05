@@ -12,6 +12,8 @@ The following features have been implemented:
 - Security: reCAPTCHA, HTTPS, password encryption
 - Fabflix Android Application
 - XML Parsing to add external data about movies to the database
+- Scaling: Database replication, deployment in multiple AWS instances, load balancing using Apache Server
+- Testing: JMeter testing
 
 ## Application Deployment on Tomcat
 
@@ -169,6 +171,3 @@ python log_processing.py
 | Case 2: HTTP/10 threads                        | ![](img/scaled-test-2.jpg)   | 131                         | 20.231                                  | 20.060                        | As expected, I can see the advantage of the scaled-version. Compared to HTTP/10 threads tested in single instance, these time measures are considerably lower meaning users receive responses faster thanks to load balancing.         |
 | Case 3: HTTP/10 threads/No connection pooling  | ![](img/scaled-test-3.jpg)   | 205                       | 55.308                          | 55.157                | Performance is lower compared to scaled-version case 2 due to no connection pooling. But the difference with single instance test case 4 shows that load balancing again reduced all time measures under the same conditions considerably as expected.            |
 
-## Member's Contribution
-
-Solo group, you can check all my contributions to the project in the commit history
