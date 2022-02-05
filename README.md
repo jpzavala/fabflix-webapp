@@ -15,6 +15,8 @@ The following features have been implemented:
 - Scaling: Database replication, deployment in multiple AWS instances, load balancing using Apache Server
 - Testing: JMeter testing
 
+![Image of Fabflix login page](fabflix.jpg)
+
 ## Application Deployment on Tomcat
 
 ### Before running:
