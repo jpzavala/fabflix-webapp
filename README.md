@@ -1,5 +1,7 @@
 # Fabflix
 
+Fabflix is an e-commerce web application dedicated to movie browsing and rentals. Users can login to the website, search for movies based on multiple parameters, add movies to a shopping cart, and proceed to checkout. The motivation for this full-stack project was to explore the architecture of modern web application and the use of databases. 
+
 ## Application Deployment on Tomcat
 
 ### Before running:
@@ -32,19 +34,6 @@
 
 - In Searching feature: title, director and star's name matching were all implemented using AND, LIKE and the '%input%' pattern in the query for matching
 - As established in the requirements, year does not support substring matching so in the query it has to exactly match
-
-## PreparedStatement
-
-Statement was replaced with PreparedStatement for all queries related to user input in the following files:
-- CheckoutServlet.java: https://github.com/UCI-Chenli-teaching/cs122b-fall21-team-7/blob/main/src/CheckoutServlet.java
-- DashboardServlet.java: https://github.com/UCI-Chenli-teaching/cs122b-fall21-team-7/blob/main/src/DashboardServlet.java
-- LoginEmployeeServlet.java: https://github.com/UCI-Chenli-teaching/cs122b-fall21-team-7/blob/main/src/LoginEmployeeServlet.java
-- LoginServlet.java: https://github.com/UCI-Chenli-teaching/cs122b-fall21-team-7/blob/main/src/LoginServlet.java
-- MoviesServlet.java: https://github.com/UCI-Chenli-teaching/cs122b-fall21-team-7/blob/main/src/MoviesServlet.java
-- ShoppingCartServlet.java: https://github.com/UCI-Chenli-teaching/cs122b-fall21-team-7/blob/main/src/ShoppingCartServlet.java
-- SingleMovieServlet.java: https://github.com/UCI-Chenli-teaching/cs122b-fall21-team-7/blob/main/src/SingleMovieServlet.java
-- SingleStarServlet.java: https://github.com/UCI-Chenli-teaching/cs122b-fall21-team-7/blob/main/src/SingleStarServlet.java
-- VerifyPassword.java: https://github.com/UCI-Chenli-teaching/cs122b-fall21-team-7/blob/main/src/VerifyPassword.java
 
 ## Optimization Strategies
 
